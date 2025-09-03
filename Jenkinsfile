@@ -16,5 +16,10 @@ pipeline {
            echo "running test stage"
         }
       }
+      stage ('running the script') {
+        steps {
+           sh './script.sh'
+        }
+      }
     }
 }
